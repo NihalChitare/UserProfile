@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+React Web Application: User Profile and Interest Fields
+This project is a React web application designed to manage user profiles and interest fields. It incorporates features such as dynamic page rendering, form handling, local storage interaction, and API integration.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Designing React Pages
+User Profile Page
+Dynamically populate fields from a JSON file locally.
+Fields: Name, Age, Gender, Location, Interest 1, Interest 2, Email, Username, Display name, Avatar URI.
+Implement API calls to auto-fill the user's location and retrieve user information.
+Fields: Location, Email, Username, Display name, Avatar URI.
+Functionality
+Local Storage Interaction
+Store user profile states in local storage.
+Load stored data upon page refresh.
+Load & Read JSON
+Read a JSON file from local storage.
+Display static information on the page.
+API Integration #1: Populate User Location
+Interact with geolocation endpoints (e.g., Abstract API).
+Enable fetching and updating of user location.
+API Integration #2: Populate User Information
+Interact with the API endpoint (e.g., GotArtifact API).
+Fetch and display user email, username, display name & avatar URI.
+Example response provided for integration.
+Submission Instructions
+GitHub Repository
+Submit the React app source code on GitHub.
+Include a README.md file documenting the steps taken to design React pages and outlining the functionality of the application.
+Steps to Design React Pages
+Set Up React App
 
-## Available Scripts
+Initialize a new React project using create-react-app.
+Set up project structure and necessary dependencies.
+Create User Profile Page
 
-In the project directory, you can run:
+Design the layout for the user profile page.
+Implement form components for user input fields.
+Implement Local Storage Interaction
 
-### `npm start`
+Set up functions to save user input to local storage.
+Retrieve stored data and populate fields upon page load.
+Load & Read JSON
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Develop functionality to read a JSON file from local storage.
+Display static information from JSON on the page.
+Integrate API for User Location
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Implement API calls to fetch user location.
+Enable user override if necessary.
+Integrate API for User Information
 
-### `npm test`
+Set up API requests to retrieve user details.
+Display fetched information on the user profile page.
+Testing and Debugging
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Test the application thoroughly to ensure all features are functioning correctly.
+Debug any errors or issues encountered during testing.
+Documentation and Submission
 
-### `npm run build`
+Write a README.md file documenting the project, including setup instructions and functionality overview.
+Upload the project to a GitHub repository and submit the repository link for evaluation.
+Estimated Time
+The estimated time for completing this project is X hours.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Additional Notes
+Make sure to handle error cases gracefully, such as failed API requests or missing local storage data.
+Follow best practices for React development, including component-based architecture and state management.
+Ensure the application is responsive and accessible for a seamless user experience across devices.

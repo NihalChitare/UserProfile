@@ -49,7 +49,6 @@ const UserProfilePage = () => {
         }
       }
       );
-      console.log("response111111",response);
       if (response.status !== 200) {
   
       const { email, username, display_name, avatar_uri } = ConstantUserDetails.profile;
@@ -60,7 +59,6 @@ const UserProfilePage = () => {
         displayName: display_name,
         avatarURI: avatar_uri
       }));
-      console.log(avatar_uri);
     } else {
       throw new Error('Failed to fetch data');
     }
@@ -93,12 +91,11 @@ const UserProfilePage = () => {
     loadStoredData();
   }, []);
   const direct_avatar_uri=ConstantUserDetails.profile.avatar_uri
-  console.log("userData",direct_avatar_uri);
   return (
-    <div className="loginSignUp">
-      <div className="loginSignUp-container">
+    <div className="userProfile">
+      <div className="userProfile-container">
      <h1>User Profile</h1>
-        <div className="loginSignUp-fields">
+        <div className="userProfile-fields">
       <form onSubmit={handleSubmit}>
         <label className='label'>Name:</label>
         <input type="text" value={userData.name} onChange={(e) => handleInputChange('name', e.target.value)} placeholder='Name'/>
